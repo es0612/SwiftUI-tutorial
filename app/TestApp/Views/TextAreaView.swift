@@ -8,29 +8,30 @@
 import SwiftUI
 
 struct TextAreaView: View {
+    let landmark: Landmark
     var body: some View {
         VStack(alignment: .leading ) {
-            Text("Welcome to えん！！")
+            Text(landmark.name)
                 .font(.title)
             HStack {
-                Text("焼肉店")
+                Text(landmark.park)
                 Spacer()
-                Text("美味しいお肉を食べたい！")
+                Text(landmark.state)
             }                .font(.subheadline)
             .foregroundColor(.secondary)
 
 
             Divider()
 
-            Text("浜松市")
+            Text("About \(landmark.name)")
                 .font(.title2)
-            Text("静岡県、日本")
+            Text(landmark.description)
         }.padding()
     }
 }
 
 struct TextAreaView_Previews: PreviewProvider {
     static var previews: some View {
-        TextAreaView()
+        TextAreaView(landmark: landmarks[0])
     }
 }

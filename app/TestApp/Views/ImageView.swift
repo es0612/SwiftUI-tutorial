@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ImageView: View {
+    let image: Image
     var body: some View {
-        Image("harami")
+        image
             .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
             .overlay(Circle().stroke(Color.white,lineWidth: 4))
             .shadow(radius: 10 )
@@ -19,6 +20,6 @@ struct ImageView: View {
 
 struct ImageView_Previews: PreviewProvider {
     static var previews: some View {
-        ImageView()
+        ImageView(image: Image("harami"))
     }
 }

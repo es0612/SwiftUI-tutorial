@@ -8,24 +8,29 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
+    let landmark: Landmark
+
     var body: some View {
-        VStack(alignment: .center)  {
-            MapView()
-                .ignoresSafeArea()
+
+        ScrollView  {
+            MapView(cordinate: landmark.locationCoordinate)
+                .ignoresSafeArea(edges: .top)
                 .frame(height: 300)
 
-            ImageView()
+            ImageView(image: landmark.image)
                 .offset(y: -130)
                 .padding(.bottom, -130)
 
-            TextAreaView()
+            TextAreaView(landmark: landmark)
             Spacer()
         }
+        .navigationTitle(landmark.name)
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail()
+        LandmarkDetail(landmark: landmarks[0])
     }
 }
