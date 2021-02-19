@@ -8,7 +8,12 @@
 import SwiftUI
 
 struct LandmarkDetail: View {
-    let landmark: Landmark
+    @EnvironmentObject var modelData: ModelData
+    var landmark: Landmark
+
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
 
     var body: some View {
 
@@ -31,6 +36,6 @@ struct LandmarkDetail: View {
 
 struct LandmarkDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LandmarkDetail(landmark: landmarks[0])
+        LandmarkDetail(landmark: ModelData().landmarks[0]).environmentObject(ModelData())
     }
 }

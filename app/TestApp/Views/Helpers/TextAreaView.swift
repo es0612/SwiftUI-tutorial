@@ -8,11 +8,21 @@
 import SwiftUI
 
 struct TextAreaView: View {
-    let landmark: Landmark
+    @EnvironmentObject var modelData: ModelData
+    var landmark: Landmark
+
+    var landmarkIndex: Int {
+        modelData.landmarks.firstIndex(where: { $0.id == landmark.id })!
+    }
+
     var body: some View {
         VStack(alignment: .leading ) {
-            Text(landmark.name)
-                .font(.title)
+            HStack {
+                Text(landmark.name)
+                    .font(.title)
+                    .foregroundColor(.primary)
+                FavoriteButton(isSet: $modelData.landmarks[landmarkIndex].isFavorite)
+            }
             HStack {
                 Text(landmark.park)
                 Spacer()
@@ -32,6 +42,6 @@ struct TextAreaView: View {
 
 struct TextAreaView_Previews: PreviewProvider {
     static var previews: some View {
-        TextAreaView(landmark: landmarks[0])
+        TextAreaView(landmark: ModelData().landmarks[0]).environmentObject(ModelData())
     }
 }
