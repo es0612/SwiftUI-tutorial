@@ -34,6 +34,7 @@
 		38648BCF25DDBBBB00896DEA /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38648BCE25DDBBBB00896DEA /* LandmarkRow.swift */; };
 		38648BD225DDBDA400896DEA /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38648BD125DDBDA400896DEA /* LandmarkList.swift */; };
 		38648BD525DDBEF100896DEA /* LandmarkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38648BD425DDBEF100896DEA /* LandmarkDetail.swift */; };
+		3879822125FD562E00F6C28D /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3879822025FD562E00F6C28D /* LandmarkList.swift */; };
 		388F68FF25F02CFD001532E9 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F68FE25F02CFD001532E9 /* PageViewController.swift */; };
 		388F690225F02E7A001532E9 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F690125F02E7A001532E9 /* FeatureCard.swift */; };
 		388F690525F02FF3001532E9 /* PageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 388F690425F02FF3001532E9 /* PageView.swift */; };
@@ -48,7 +49,6 @@
 		388F692825F186DB001532E9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 388F692725F186DB001532E9 /* Preview Assets.xcassets */; };
 		388F692D25F186DB001532E9 /* TestAppForWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 388F690C25F186D4001532E9 /* TestAppForWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		388F693F25F1B487001532E9 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38648BCE25DDBBBB00896DEA /* LandmarkRow.swift */; };
-		388F694025F1B487001532E9 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38648BD125DDBDA400896DEA /* LandmarkList.swift */; };
 		388F694125F1B487001532E9 /* TestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4101725DCE59F0020111C /* TestAppApp.swift */; };
 		388F694525F1B49D001532E9 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4102725DCE9900020111C /* ImageView.swift */; };
 		388F694625F1B49D001532E9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A4102A25DCEB400020111C /* MapView.swift */; };
@@ -156,6 +156,7 @@
 		38648BCE25DDBBBB00896DEA /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
 		38648BD125DDBDA400896DEA /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		38648BD425DDBEF100896DEA /* LandmarkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkDetail.swift; sourceTree = "<group>"; };
+		3879822025FD562E00F6C28D /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 		388F68FE25F02CFD001532E9 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		388F690125F02E7A001532E9 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
 		388F690425F02FF3001532E9 /* PageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageView.swift; sourceTree = "<group>"; };
@@ -339,6 +340,7 @@
 				388F692A25F186DB001532E9 /* PushNotificationPayload.apns */,
 				388F692625F186DB001532E9 /* Preview Content */,
 				388F695525F1B572001532E9 /* LandmarkDetail.swift */,
+				3879822025FD562E00F6C28D /* LandmarkList.swift */,
 			);
 			path = "TestAppForWatch Extension";
 			sourceTree = "<group>";
@@ -586,8 +588,8 @@
 			files = (
 				388F694525F1B49D001532E9 /* ImageView.swift in Sources */,
 				388F691F25F186D8001532E9 /* NotificationController.swift in Sources */,
-				388F694025F1B487001532E9 /* LandmarkList.swift in Sources */,
 				388F694D25F1B4AD001532E9 /* Profile.swift in Sources */,
+				3879822125FD562E00F6C28D /* LandmarkList.swift in Sources */,
 				388F691D25F186D8001532E9 /* ContentView.swift in Sources */,
 				388F692325F186D8001532E9 /* ComplicationController.swift in Sources */,
 				388F695625F1B572001532E9 /* LandmarkDetail.swift in Sources */,
